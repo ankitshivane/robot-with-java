@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-22T00:33:40.170759" rpa="false" schemaversion="5">
+<suite id="s1" name="Sample Test" source="C:\Users\Ankit shivane\IdeaProjects\robot-with-java\src\test\robot\sample_test.robot">
+<test id="s1-t1" name="User Should Be Able to Login" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-22T00:33:40.625314" level="INFO">Opening browser 'Chrome' to base url 'https://www.tutorialspoint.com/index.htm'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-22T00:33:40.625314" elapsed="4.593158"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-22T00:33:45.233914" elapsed="10.330956"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-22T00:34:05.566077" level="INFO">Slept 10 seconds.</msg>
+<arg>${WAIT_TIME}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-22T00:33:55.564870" elapsed="10.002222"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-22T00:34:05.569346" level="INFO">Clicking link '/html/body/header/nav/ul/li[5]/a'.</msg>
+<msg time="2024-09-22T00:34:05.984861" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-22T00:34:05.984861" level="FAIL">Link with locator '/html/body/header/nav/ul/li[5]/a' not found.</msg>
+<arg>/html/body/header/nav/ul/li[5]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-22T00:34:05.568090" elapsed="0.420767">Link with locator '/html/body/header/nav/ul/li[5]/a' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-09-22T00:34:05.988857" elapsed="0.000000"/>
+</kw>
+<kw name="Input Username And Password">
+<status status="NOT RUN" start="2024-09-22T00:34:05.988857" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-09-22T00:34:05.988857" elapsed="0.000000"/>
+</kw>
+<kw name="Click Login Button">
+<status status="NOT RUN" start="2024-09-22T00:34:05.988857" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-22T00:34:05.988857" elapsed="2.854432"/>
+</kw>
+<status status="FAIL" start="2024-09-22T00:33:40.622303" elapsed="28.222844">Link with locator '/html/body/header/nav/ul/li[5]/a' not found.</status>
+</test>
+<status status="FAIL" start="2024-09-22T00:33:40.175478" elapsed="28.673823"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sample Test">Sample Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
